@@ -15,6 +15,9 @@
 		484DE2EA214B99D100A024DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 484DE2E9214B99D100A024DF /* main.m */; };
 		484DE2F4214B99D100A024DF /* SHAbstractFactoryDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 484DE2F3214B99D100A024DF /* SHAbstractFactoryDemoTests.m */; };
 		484DE2FF214B99D100A024DF /* SHAbstractFactoryDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 484DE2FE214B99D100A024DF /* SHAbstractFactoryDemoUITests.m */; };
+		484DE30F214B9B3E00A024DF /* SHBrandingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 484DE30E214B9B3E00A024DF /* SHBrandingFactory.m */; };
+		484DE312214BA0B300A024DF /* SHBrandingFactoryOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 484DE311214BA0B300A024DF /* SHBrandingFactoryOne.m */; };
+		484DE315214BA0C400A024DF /* SHBrandingFactoryTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 484DE314214BA0C400A024DF /* SHBrandingFactoryTwo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		484DE2FA214B99D100A024DF /* SHAbstractFactoryDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHAbstractFactoryDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		484DE2FE214B99D100A024DF /* SHAbstractFactoryDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHAbstractFactoryDemoUITests.m; sourceTree = "<group>"; };
 		484DE300214B99D100A024DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484DE30D214B9B3E00A024DF /* SHBrandingFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBrandingFactory.h; sourceTree = "<group>"; };
+		484DE30E214B9B3E00A024DF /* SHBrandingFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBrandingFactory.m; sourceTree = "<group>"; };
+		484DE310214BA0B300A024DF /* SHBrandingFactoryOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBrandingFactoryOne.h; sourceTree = "<group>"; };
+		484DE311214BA0B300A024DF /* SHBrandingFactoryOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBrandingFactoryOne.m; sourceTree = "<group>"; };
+		484DE313214BA0C400A024DF /* SHBrandingFactoryTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHBrandingFactoryTwo.h; sourceTree = "<group>"; };
+		484DE314214BA0C400A024DF /* SHBrandingFactoryTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHBrandingFactoryTwo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +110,12 @@
 		484DE2D9214B99D000A024DF /* SHAbstractFactoryDemo */ = {
 			isa = PBXGroup;
 			children = (
-				484DE2DA214B99D000A024DF /* AppDelegate.h */,
-				484DE2DB214B99D000A024DF /* AppDelegate.m */,
+				484DE30C214B9A8400A024DF /* 抽象工厂类 */,
 				484DE2DD214B99D000A024DF /* ViewController.h */,
 				484DE2DE214B99D000A024DF /* ViewController.m */,
 				484DE2E0214B99D000A024DF /* Main.storyboard */,
+				484DE2DA214B99D000A024DF /* AppDelegate.h */,
+				484DE2DB214B99D000A024DF /* AppDelegate.m */,
 				484DE2E3214B99D100A024DF /* Assets.xcassets */,
 				484DE2E5214B99D100A024DF /* LaunchScreen.storyboard */,
 				484DE2E8214B99D100A024DF /* Info.plist */,
@@ -130,6 +140,19 @@
 				484DE300214B99D100A024DF /* Info.plist */,
 			);
 			path = SHAbstractFactoryDemoUITests;
+			sourceTree = "<group>";
+		};
+		484DE30C214B9A8400A024DF /* 抽象工厂类 */ = {
+			isa = PBXGroup;
+			children = (
+				484DE30D214B9B3E00A024DF /* SHBrandingFactory.h */,
+				484DE30E214B9B3E00A024DF /* SHBrandingFactory.m */,
+				484DE310214BA0B300A024DF /* SHBrandingFactoryOne.h */,
+				484DE311214BA0B300A024DF /* SHBrandingFactoryOne.m */,
+				484DE313214BA0C400A024DF /* SHBrandingFactoryTwo.h */,
+				484DE314214BA0C400A024DF /* SHBrandingFactoryTwo.m */,
+			);
+			path = "抽象工厂类";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				484DE2DF214B99D000A024DF /* ViewController.m in Sources */,
+				484DE315214BA0C400A024DF /* SHBrandingFactoryTwo.m in Sources */,
 				484DE2EA214B99D100A024DF /* main.m in Sources */,
+				484DE30F214B9B3E00A024DF /* SHBrandingFactory.m in Sources */,
+				484DE312214BA0B300A024DF /* SHBrandingFactoryOne.m in Sources */,
 				484DE2DC214B99D000A024DF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

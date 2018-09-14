@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "SHBrandingFactory.h"
+#import "SHBrandingFactoryOne.h"
+#import "SHBrandingFactoryTwo.h"
 
 @interface ViewController ()
 
@@ -14,16 +17,19 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (IBAction)btnClick:(UIButton *)sender {
+    if (sender.tag == 1000) {
+        
+        SHBrandingFactory *sh_factory = [SHBrandingFactoryOne factory];
+        [sh_factory brandedView];
+        [sh_factory brandedLabel];
+        
+    }else if (sender.tag == 1001){
+        SHBrandingFactory *sh_factory = [SHBrandingFactoryTwo factory];
+        [sh_factory brandedView];
+        [sh_factory brandedLabel];
+        
+    }
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end
